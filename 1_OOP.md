@@ -63,4 +63,33 @@
 
 
 
-3.
+### 3. Composition vs Inheritance
+
+- Composition = **has-a** relationship
+
+- More flexible than inheritance; avoids tight coupling
+
+- Often preferred over inheritance
+
+- Example:
+
+```
+class Engine {} 
+class Car { private Engine engine;} // Car has an Engine
+```
+
+### 4. Overloading vs Overriding
+
+| Feature    | Overloading                            | Overriding                               |
+| ---------- | -------------------------------------- | ---------------------------------------- |
+| Definition | Same method name, different parameters | Same signature, different implementation |
+| Binding    | Compile-time                           | Runtime                                  |
+| Purpose    | Convenience                            | Polymorphism                             |
+
+### 5. Abstract Class vs Interface
+
+| Topic       | Abstract Class                       | Interface                           |
+| ----------- | ------------------------------------ | ----------------------------------- |
+| Inheritance | One allowed                          | Multiple allowed                    |
+| Members     | fields + concrete methods allowed    | abstract + default + static methods |
+| Use case    | Shared base + partial implementation | Behavior contract                   |
